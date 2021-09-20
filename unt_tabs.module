@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains unt_tabs.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function unt_tabs_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the unt_tabs module.
+    case 'help.page.unt_tabs':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Installs the UNT Tabs plugin for CKEditor4') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+function unt_tabs_page_attachments(array &$page)
+{
+  $page['#attached']['library'][] = 'unt_tabs/tabs_styles';
+}

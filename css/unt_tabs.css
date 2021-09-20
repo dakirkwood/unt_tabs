@@ -1,0 +1,63 @@
+section.utabs {
+  /*background-color: #efefef;*/
+  margin: 3rem 0;
+  display:block;
+  border: 1px solid #ccc;
+}
+.utabs header {
+  border-bottom: 1px solid #060;
+}
+
+ul#tab-nav {
+  padding: 0;
+  margin: 0;
+  background-color:#eee;
+}
+#tab-nav li {
+  display:inline-block;
+  list-style: none;
+  /*border-right: 1px solid #ccc;*/
+}
+#tab-nav li:last-child {
+  border-right: none;
+}
+#tab-nav a {
+  display: block;
+  text-decoration: none;
+  padding: .5rem;
+  text-align: center;
+}
+#tab-nav li.active a {
+  background-color: #060;
+  color: #FFF;
+}
+#tab-content {
+  position: relative;
+  padding: 1.5rem 4rem 2.5rem;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane {
+  /*position: absolute;*/
+  display: none;
+  column-count: 2;
+  column-gap: 2.5rem;
+}
+.utabs p {
+  margin: .875rem 0;
+}
+.utabs p:first-child,
+.utabs table+p,
+.utabs h2+p,
+.utabs h3+p,
+.utabs h4+p {
+  margin-top: 0;
+}
+.utabs table,
+.utabs h2,
+.utabs h3,
+.utabs h4 {
+  column-span: all;
+  margin-bottom: 1.75rem;
+}

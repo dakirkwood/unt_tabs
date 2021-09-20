@@ -1,0 +1,10 @@
+name: 'UNT Tabs'
+type: module
+description: 'Installs the UNT Tabs plugin for CKEditor4'
+core_version_requirement: 9.x
+package: 'CKEditor Plugins'
+dependencies:
+  - ckeditor
+
+libraries:
+  - unt_tabs/tabs_styles

@@ -1,0 +1,12 @@
+tabs_styles:
+  version: 1.x
+  css:
+    theme:
+      css/unt_tabs.css: {}
+
+  js:
+    js/show_tab.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal
